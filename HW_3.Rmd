@@ -1,0 +1,34 @@
+---
+title: "Homework 3"
+author: "John"
+date: "9/3/2021"
+output: github_document
+---
+```{r}
+library(tidyverse)
+#mpg is a package under tidyverse
+```
+
+Intro
+```{r}
+#I am curious about model vs highway milage
+#loading tidyverse and mpg
+library(tidyverse)
+```
+
+
+```{r}
+#viewing mpg data
+head(mpg)
+
+
+
+```
+# creating plot displaying "model vs highway milage"
+```{r}
+ggplot(data = mpg) + geom_point(mapping = aes(x = model, y = hwy))
+#important note: x axis is a bit clustered... Will need to learn how to edit this problem.
+# I was trying to view which model had the best highway mileage, and view trends to see if a particular maker had the best highway mileage
+```
+
+
