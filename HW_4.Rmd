@@ -1,0 +1,25 @@
+---
+title: "functions"
+output: github_document
+---
+
+ 
+Assigning "2" to "a" and "3" to "b", printing the sum of "a + b"
+```{r}
+a <- 2
+b <- 3
+print (a+b)
+
+sum(2+3)
+
+
+```
+Creating graph displaying arrival delay vs departure delay
+```{r, eval=TRUE}
+library(tidyverse)
+library(nycflights13)
+data("flights")
+AA_flights = filter(flights, carrier == "AA")
+ggplot(data = flights) + geom_point(mapping = aes(x=dep_delay, y=arr_delay))
+```
+
