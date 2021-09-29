@@ -15,7 +15,7 @@ sum(2+3)
 
 ```
 Creating graph displaying arrival delay vs departure delay
-```{r, eval=TRUE}
+```{r, message=FALSE, warning=FALSE, eval=TRUE}
 library(tidyverse)
 library(nycflights13)
 data("flights")
