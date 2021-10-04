@@ -1,0 +1,37 @@
+---
+title: "HW5.2"
+author: "John"
+date: "11/19/2021"
+output: github_document
+---
+
+```{r setup, Message=FALSE, WARNING=FALSE}
+top_100 <- diamonds %>%
+  group_by(clarity) %>%
+  slice_max(carat, n=100) %>%
+  summarise(mean(carat), na.rm = TRUE)
+```
+
+Plot for Y vs X
+
+```{r}
+ggplot(data = diamonds, aes(x = x, y = y)) + geom_point()
+```
+
+Plot for Z vs X
+
+```{r}
+ggplot(data = diamonds, aes(x = x, y = y)) + geom_point()
+```
+```{r}
+diamonds2 <- diamonds %>%
+  filter(x >= 3 & x <= 11 & y >= 3 & y <= 11 & z <= 10)
+ggplot(data = diamonds2, aes(x = x, y = y)) + geom_point()
+```
+
+```{r}
+diamonds2 <- diamonds %>%
+  filter(x >= 3 & x <= 11 & y >= 3 & y <= 11 & z >= 1.5 & z <= 10)
+ggplot(data = diamonds2, aes(x = x, y = z)) + geom_point()
+```
+

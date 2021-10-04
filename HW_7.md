@@ -40,3 +40,9 @@ pl
 ```
 
 ![](HW_7_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+**It should be noted that I used the above example from
+[this](https://youtu.be/RPwJ6ExwPbg) R training video, and used a
+[predefined color
+pallet](https://r-charts.com/part-whole/stacked-bar-chart-ggplot2/) from
+r-charts.com.**
