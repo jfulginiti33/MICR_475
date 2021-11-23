@@ -1,36 +1,44 @@
 ---
 title: "HW5.2"
-output: github_notebook
+author: "John"
+date: "11/23/2021"
+output: github_document
 ---
 
+```{r setup, Message=FALSE, Warning=FALSE}
+library(tidyverse)
+glimpse(diamonds)
+sample_frac(diamonds, 0.01, replace = TRUE)
+group_by(diamonds, clarity)
+```
 
 
-```{r, Message = FALSE, Warning = FALSE}
+
+```{r}
 top_100 <- diamonds %>%
   group_by(clarity) %>%
   slice_max(carat, n=100) %>%
   summarise(mean(carat), na.rm = TRUE)
-
 ```
 
-Plot for Y vs X
+Plot Y vs X
 
 ```{r}
 ggplot(data = diamonds, aes(x = x, y = y)) + geom_point()
 ```
 
-Plot for Z vs X
+Plot Z vs X
+
 ```{r}
 ggplot(data = diamonds, aes(x = x, y = z)) + geom_point()
 ```
-Refined graph (Y vs X)
+Refined Y vs X graph
 ```{r}
 diamonds2 <- diamonds %>%
   filter(x >= 3 & x <= 11 & y >= 3 & y <= 11 & z <= 10)
 ggplot(data = diamonds2, aes(x = x, y = y)) + geom_point()
 ```
-Refined graph (Z vs X)
-
+Refined Z vs X graph 
 ```{r}
 diamonds2 <- diamonds %>%
   filter(x >= 3 & x <= 11 & y >= 3 & y <= 11 & z >= 1.5 & z <= 10)
