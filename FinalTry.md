@@ -4,14 +4,14 @@ John
 12/13/2021
 
 ![The good
-plot](C:\Users\Owner\Documents\MICR475_Proj\Micr475_goodplot.JPG)
+plot](https://raw.githubusercontent.com/jfulginiti33/MICR_475/main/HW6%20images/Micr475_goodplot.png)
 
 We see the relative abundance of major bacterial groups in four sites
 that vary in age. The categorial data is unordered, and is displayed
 using the geom\_bar() function.
 
 ![The bad
-plot](C:\Users\Owner\Documents\MICR475_Proj\Micr475_badplot.JPG)
+plot](https://raw.githubusercontent.com/jfulginiti33/MICR_475/main/HW6%20images/Micr475_badplot.png)
 
 We see the population densities for total bacteria, culturable bacteria,
 and Fe-oxidizers in each of the four sites over a 6 year period. I think
